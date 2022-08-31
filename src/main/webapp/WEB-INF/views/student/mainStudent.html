@@ -20,7 +20,7 @@ td {
 thead,
 tfoot {
     background-color: #e8e5e5;
-    color: #344712;
+    color: #ffffff;
 }
 </style>
 <style>
@@ -64,7 +64,7 @@ tfoot {
         <td th:text="${student.studyFormat}"></td>
         <td>
             <a th:href="@{/students/update/{studentId}(studentId=${student.getStudentId()})}">
-                <input type="submit" value="update" style="height: 40px; width: 80px; background-color:blue;"/>
+                <input type="submit" value="update" style="height: 40px; width: 80px; background-color:#ffffff;"/>
             </a>
         </td>
         <td><form th:method="DELETE" th:action="@{/students/{studentId}/{companyId}/delete(studentId=${student.studentId},companyId=${companyId})}">

@@ -16,7 +16,7 @@
     thead,
     tfoot {
         background-color: #e8e5e5;
-        color: #344712;
+        color: #ffffff;
     }
     </style>
     <style>
@@ -48,22 +48,22 @@
         <td th:text="${company.locatedCountry}"></td>
 
         <td><a th:href="@{/companies/update/{id}/(id=${company.getCompanyId()})}">
-            <button style="height: 40px; width: 80px; background-color:blue;">update</button>
+            <button style="height: 40px; width: 80px; background-color:#ffffff;">update</button>
         </a>
         </td>
         <td><form th:method="DELETE" th:action="@{/companies/delete/{id}(id=${company.getCompanyId()})}">
-            <input type="submit" value="delete" style="height: 40px; width: 80px; background-color:darkorange;"/>
+            <input type="submit" value="delete" style="height: 40px; width: 80px; background-color:#ffffff;"/>
         </form>
         </td>
         <td><a th:href="@{/courses/allCourses/{companyId}(companyId=${company.getCompanyId()})}">
-            <input type="submit" value="course" style="height: 40px; width: 80px;background: darkcyan;"/>
+            <input type="submit" value="course" style="height: 40px; width: 80px;background: #ffffff;"/>
         </a>
         </td>
         <td><a th:href="@{/instructors/allInstructors/{companyId}(companyId=${company.getCompanyId()})}">
-            <input type="submit" value="instructor" style="height: 40px;width: 110px;background: lightcoral">
+            <input type="submit" value="instructor" style="height: 40px;width: 110px;background: #ffffff">
         </a></td>
         <td><a th:href="@{/students/allStudents/{companyId}(companyId=${company.getCompanyId()})}">
-            <input type="submit" value="student" style="height: 40px;width: 80px;background: mediumaquamarine">
+            <input type="submit" value="student" style="height: 40px;width: 80px;background: #ffffff">
         </a>
         </td>
 
